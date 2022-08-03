@@ -1,1 +1,41 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background-color: green;
+}
+.bywho {
+  text-align: left;
+}
+.card {
+  width: 220px;
+  height: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.top {
+  position: static;
+  display: flex;
+  top: 0px;
+  left: 10px;
+  font-size: 40px;
+  text-align: left;
+}
+
+.bot {
+  position: relative;
+  right: 0px;
+  bottom: 7px;
+  font-size: 40px;
+  text-align: right;
+  line-height: 1;
+}
+
+.number {
+  font-size: 100px;
+  text-align: center;
+  margin-bottom: 10px;
+}

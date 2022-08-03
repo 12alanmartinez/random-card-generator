@@ -7,5 +7,35 @@ import "./assets/img/4geeks.ico";
 
 window.onload = function() {
   //write your code here
-  console.log("Hello Rigo from the console!");
+  let randomSuite = Math.floor(Math.random() * 4);
+
+  let randomNumber = Math.floor(Math.random() * 13) + 1;
+  let num = document.getElementById("number");
+  num.innerHTML = randomNumber;
+
+  if (randomNumber == 1) {
+    num.innerHTML = "A";
+  }
+  if (randomNumber == 11) {
+    num.innerHTML = "J";
+  }
+  if (randomNumber == 12) {
+    num.innerHTML = "Q";
+  }
+  if (randomNumber == 13) {
+    num.innerHTML = "K";
+  }
+
+  const classes = ["♦", "♥", "♠", "♣"];
+  let suite = classes[randomSuite];
+  let topSuite = document.getElementById("top");
+  let botSuite = document.getElementById("bot");
+  topSuite.innerHTML = suite;
+  botSuite.innerHTML = suite;
+
+  if (randomSuite == 1) {
+    topSuite.style.color = "red";
+    botSuite.style.color = "red";
+    num.style.color = "red";
+  }
 };
